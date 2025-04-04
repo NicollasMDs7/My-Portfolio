@@ -4,7 +4,7 @@ import { Download, Linkedin, Github, Instagram } from "lucide-react";
 import Link from "next/link";
 export function Hero() {
   return (
-    <div className="w-full flex flex-col-reverse lg:flex-row h-auto lg:h-screen items-center justify-around gap-7 bg-slate-950 px-4 py-10">
+    <div className="w-full flex flex-col-reverse lg:flex-row h-auto lg:h-screen items-center justify-around gap-7  px-4 py-10">
       <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
         <h1 className="font-semibold text-white text-3xl sm:text-4xl lg:text-5xl">
           Olá, Eu sou{" "}
