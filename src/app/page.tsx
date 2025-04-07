@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Formacao } from "@/components/formation";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Formacao />
       <Projetos />
+      <Footer />
     </div>
   );
 }
