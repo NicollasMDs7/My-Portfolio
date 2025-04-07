@@ -19,9 +19,15 @@ export function Navbar() {
 
       {/* Menu items - escondido no mobile */}
       <ul className="hidden sm:flex gap-4 text-white">
-        <li>Sobre</li>
-        <li>Projetos</li>
-        <li className="mr-10">Formações</li>
+        <li className="transition transform hover:scale-110 hover:text-cyan-400">
+          <a href="/">Sobre</a>
+        </li>
+        <li className="transition transform hover:scale-110 hover:text-cyan-400">
+        <a href="#formacao">Formações</a>
+        </li>
+        <li className="mr-10 transition transform hover:scale-110 hover:text-cyan-400">
+        <a href="/project">Projetos</a>
+        </li>
       </ul>
 
       {/* Botão do menu - visível no mobile */}
@@ -35,10 +41,16 @@ export function Navbar() {
       {/* Menu dropdown (mobile) */}
       {menuOpen && (
         <ul className="absolute top-12 right-4 bg-slate-800 text-white flex flex-col gap-2 p-4 rounded-lg shadow-lg sm:hidden">
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Formações</li>
-        </ul>
+        <li className="transition transform hover:scale-110 hover:text-cyan-400">
+        <a href="/">Sobre</a>
+        </li>
+        <li className="transition transform hover:scale-110 hover:text-cyan-400">
+        <a href="/formation">Formações</a>
+        </li>
+        <li className="transition transform hover:scale-110 hover:text-cyan-400">
+        <a href="/project">Projetos</a>
+        </li>
+      </ul>
       )}
     </div>
   );
