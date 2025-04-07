@@ -5,7 +5,7 @@ import { Csharp } from "@/components/projetos/csharp";
 import { React } from "@/components/projetos/react";
 export function Projetos() {
   return (
-    <section id="projetos" className="px-8 pt-24 md:h-[90vh]">
+    <section id="projetos" className="px-8 pt-36 md:h-[90vh]">
       <div className="flex flex-col items-center mb-5 ">
         <h1 className="text-4xl font-bold text-blue-100 drop-shadow-[0_0_0.3rem_#00B4D8]">
           Projetos
