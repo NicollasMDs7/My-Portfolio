@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="bg-slate-900 h-12 flex items-center justify-between px-4 relative">
+    <div className="bg-slate-900 h-12 flex items-center justify-between px-4 fixed top-0 w-full z-50">
       <div className="pl-6 gap-6 flex items-center">
         <Image
           src="/images/logo.png"
@@ -23,10 +23,10 @@ export function Navbar() {
           <a href="/">Sobre</a>
         </li>
         <li className="transition transform hover:scale-110 hover:text-cyan-400">
-        <a href="#formacao">Formações</a>
+          <a href="#formacao">Formações</a>
         </li>
         <li className="mr-10 transition transform hover:scale-110 hover:text-cyan-400">
-        <a href="/project">Projetos</a>
+          <a href="#projetos">Projetos</a>
         </li>
       </ul>
 
@@ -41,16 +41,16 @@ export function Navbar() {
       {/* Menu dropdown (mobile) */}
       {menuOpen && (
         <ul className="absolute top-12 right-4 bg-slate-800 text-white flex flex-col gap-2 p-4 rounded-lg shadow-lg sm:hidden">
-        <li className="transition transform hover:scale-110 hover:text-cyan-400">
-        <a href="/">Sobre</a>
-        </li>
-        <li className="transition transform hover:scale-110 hover:text-cyan-400">
-        <a href="/formation">Formações</a>
-        </li>
-        <li className="transition transform hover:scale-110 hover:text-cyan-400">
-        <a href="/project">Projetos</a>
-        </li>
-      </ul>
+          <li className="transition transform hover:scale-110 hover:text-cyan-400">
+            <a href="#hero">Sobre</a>
+          </li>
+          <li className="transition transform hover:scale-110 hover:text-cyan-400">
+            <a href="#formacao">Formações</a>
+          </li>
+          <li className="transition transform hover:scale-110 hover:text-cyan-400">
+            <a href="#projetos">Projetos</a>
+          </li>
+        </ul>
       )}
     </div>
   );

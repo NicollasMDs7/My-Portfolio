@@ -20,8 +20,8 @@ export function Hero() {
           soluções que unem design e funcionalidade.
         </p>
         <p className="text-white text-base sm:text-lg lg:text-xl">
-          Trabalho com React, Next.js, Node.js, .NET e Spring, sempre buscando
-          escrever código limpo e eficiente.
+          Trabalho com React, JavaScript, Angular, .NET e Spring, sempre
+          buscando escrever código limpo e eficiente.
         </p>
         <p className="text-white text-base sm:text-lg lg:text-xl">
           Estou em constante evolução e meu objetivo é crescer na área,
