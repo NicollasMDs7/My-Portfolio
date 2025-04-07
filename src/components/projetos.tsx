@@ -58,7 +58,6 @@ export function Projetos() {
               C#
             </TabsTrigger>
           </TabsList>
-
           <TabsContent value="react">
             <React />
           </TabsContent>
