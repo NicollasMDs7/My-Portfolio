@@ -2,7 +2,7 @@ import { Hourglass, MoveRight } from "lucide-react";
 
 export function Formacao() {
   return (
-    <section id="formacao" className="px-8 pt-24 md:h-[50vh]">
+    <section id="formacao" className="px-8 pt-24 md:h-[50vh] mb-24">
       <div className="flex justify-center mb-5">
         <h1 className="text-4xl font-bold text-blue-100 drop-shadow-[0_0_0.3rem_#00B4D8]">
           Formação
