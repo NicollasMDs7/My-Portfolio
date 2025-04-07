@@ -29,7 +29,7 @@ export function React() {
   };
 
   return (
-    <div className="flex w-full">
+    <div className="flex w-full justify-center"> {/* <-- Centraliza o Card */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <Card
           className="relative group h-80 overflow-hidden bg-transparent border border-gray-600 rounded-xl"
@@ -46,17 +46,17 @@ export function React() {
           {/* Overlay escurecedor */}
           <div
             className={`absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-300
-            ${active ? "opacity-100" : "opacity-0"}
-            sm:group-hover:opacity-100`}
+              ${active ? "opacity-100" : "opacity-0"}
+              sm:group-hover:opacity-100`}
           />
 
           {/* Título */}
           <CardTitle
             className={`absolute top-4 left-1/2 -translate-x-1/2 text-blue-100 
-            drop-shadow-[0_0_0.3rem_#00B4D8] hover:drop-shadow-[0_0_0.5rem_#00B4D8] text-lg 
-            transition-all duration-300
-            ${active ? "opacity-100" : "opacity-0"}
-            sm:group-hover:opacity-100`}
+              drop-shadow-[0_0_0.3rem_#00B4D8] hover:drop-shadow-[0_0_0.5rem_#00B4D8] text-lg 
+              transition-all duration-300
+              ${active ? "opacity-100" : "opacity-0"}
+              sm:group-hover:opacity-100`}
           >
             One-Climas
           </CardTitle>
@@ -64,9 +64,9 @@ export function React() {
           {/* Descrição */}
           <CardDescription
             className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center px-6 w-full max-w-[500px] text-base leading-relaxed
-            transition-all duration-300
-            ${active ? "opacity-100" : "opacity-0"}
-            sm:group-hover:opacity-100`}
+              transition-all duration-300
+              ${active ? "opacity-100" : "opacity-0"}
+              sm:group-hover:opacity-100`}
           >
             Projeto onde entreguei um projeto de um site de clima, consumindo a
             API da OpenWeather.
@@ -75,9 +75,9 @@ export function React() {
           {/* Footer */}
           <CardFooter
             className={`absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4 text-white mt-6
-            transition-all duration-300
-            ${active ? "opacity-100" : "opacity-0"}
-            sm:group-hover:opacity-100`}
+              transition-all duration-300
+              ${active ? "opacity-100" : "opacity-0"}
+              sm:group-hover:opacity-100`}
           >
             <Button
               variant="secondary"
